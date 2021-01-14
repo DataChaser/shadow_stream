@@ -27,7 +27,7 @@ ggplot() +
 x = dataset[,2:5]
 View(x)
 
-#Finding the optimumn number of clusters using the Elbow Method
+#Finding the optimum number of clusters using the Elbow Method
 w = vector()
 for (i in 1:10) 
   w[i] = sum(kmeans(x, i)$withinss)
